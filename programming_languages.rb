@@ -6,6 +6,7 @@ def reformat_languages(languages)
     style_data.each do |lang_name, name_data|
       if new_hash[lang_name] == true
         new_hash[lang_name][:style] << lang_style
+        binding.pry
       else
         new_hash[lang_name] = {}
         new_hash[lang_name][:type] = name_data[:type]
